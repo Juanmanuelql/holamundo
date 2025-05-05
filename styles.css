@@ -1,0 +1,380 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    height: 100vh; /* Cambia el 100vh por 70vh para que ocupe el 70% de la pantalla */
+    background: url('https://www.senati.edu.pe/conexionsenati/wp-content/uploads/2023/05/KV_GENERICO_CAMPANA_ADMI2022_Editable-scaled.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerenvio {
+    height: 100vh;
+    background: url('https://www.senati.edu.pe/conexionsenati/wp-content/uploads/2023/05/KV_GENERICO_CAMPANA_ADMI2022_Editable-scaled.jpg') no-repeat center center/cover;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.671); /* Fondo oscuro con opacidad */
+    z-index: 1;
+}
+p {
+    font-size: 14px;
+}
+label {
+    font-size: 14px;
+}
+h2 {
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+nav {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px; /* Tamaño de la fuente ajustado a 14px */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    max-width: 80%; /* Máximo ancho del contenido del header */
+    margin: 0 auto; /* Centrando el contenido */
+    padding: 0 20px; /* Espaciado a los lados */
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 26px; /* Tamaño del texto ajustado */
+    margin: 0;
+    margin-top: 40px; /* Ajusta esto para que haya espacio suficiente entre el nav y el título */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+
+.buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.submit-btn:hover {
+    background-color: #003399;
+}
+
+.whatsapp-btn {
+    background-color: #25D366; /* Color de WhatsApp */
+    color: #fff;
+}
+
+.cotiza-btn {
+    background-color: #0044cc; /* Color para Cotizar */
+    color: #fff;
+}
+
+.buttons a:hover {
+    opacity: 0.8;
+}
+
+.service-section, #contact {
+    padding: 20px;
+
+    margin: 0 20px; /* Margen de 20px en los lados en modo responsivo */
+}
+   
+.service-section {
+    padding: 20px;
+    margin-top: 30px; /* Espaciado en la parte superior */
+    margin-bottom: 30px; /* Espaciado en la parte inferior */
+}
+
+.service-section h2, #contact h2 {
+    text-align: center;
+    color: #0044cc;
+}
+.service-content p {
+    margin: 20px 0; /* 10px de margen arriba y abajo, 0 a los lados */
+}
+/* Estilos para pantallas grandes */
+.service-content ul.custom-list {
+    list-style-type: none; /* Elimina el estilo de marcador de lista */
+    padding-left: 0; /* Elimina el espacio adicional a la izquierda de la lista */
+}
+
+.service-content li {
+    margin-bottom: 10px; /* Espaciado entre elementos de lista */
+    font-size: 14px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .service-content ul.custom-list {
+        text-align: left; /* Alinea la lista a la izquierda en responsivo */
+    }
+}
+
+.service-content ul {
+    margin-bottom: 10px; /* Ajusta el valor según la separación que desees */
+}
+
+.service-section .service-content {
+    max-width: 50%;
+}
+
+.service-section .service-image {
+    max-width: 40%;
+}
+
+.service-section .service-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.service-section .service-content h2 {
+    text-align: left;
+}
+
+#contact {
+    width: calc(100% - 40px); /* Calcula el ancho restando el margen */
+    padding: 20px;
+    margin: 0 auto; /* Centra la sección horizontalmente */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+#contact form {
+    max-width: 100%; /* El formulario ocupa todo el ancho de la sección */
+}
+
+
+
+#contact form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%; /* Cambiado a 100% para ocupar el ancho disponible */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+}
+#contact form button {
+    display: block;
+    width: auto;
+    padding: 15px 80px;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 auto; /* Alinea el botón al centro */
+}
+
+
+
+.button-container {
+    text-align: center; /* Centrar el contenedor del botón */
+}
+
+#contact form button:hover {
+    background-color: #003399;
+}
+/* Estilos para el select */
+#career {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para las opciones del select */
+#career option {
+    font-size: 14px;
+}
+
+/* Estilos para los botones con la clase "btn" */
+.btn {
+    display: inline-block;
+    margin-top: 20px; /* Espaciado superior */
+    padding: 15px 30px;
+text-transform: uppercase;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px; /* Hace los botones más redondos */
+    font-size: 14px;
+    text-decoration: none; /* Elimina subrayado enlaces */
+    width: auto; /* Ancho automático para ajustarse al contenido */
+    min-width: 150px; /* Ancho mínimo */
+    text-align: center; /* Alinea el texto al centro */
+    line-height: 1; /* Ajusta la altura de línea */
+}
+
+/* Estilos para el hover de los botones */
+.btn:hover {
+    background-color: #003399;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0044cc;
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    .service-section .service-content {
+        max-width: 100%;
+        margin: 0;
+        text-align: center; /* Centra el contenido en responsivo */
+    }
+
+    .service-section .service-content h2 {
+        text-align: center; /* Centra el h2 en responsivo */
+    }
+    
+    .service-section .service-content p {
+        text-align: left; /* Alinea el texto del h2 y del párrafo a la izquierda en responsivo */
+    }
+
+    .service-section .service-image {
+        max-width: 80%; /* Reduciendo un poco el ancho de la imagen en responsivo */
+        margin: 0 auto; /* Centra la imagen horizontalmente en responsivo */
+    }
+}
+
+@media screen and (min-width: 769px) {
+    
+
+    .service-section {
+        display: flex;
+        justify-content: flex-end; /* Alinea la imagen a la derecha */
+        align-items: center;
+    }
+
+    .service-content {
+        max-width: 50%;
+        margin-right: auto; /* Alinea el contenido a la izquierda */
+    }
+
+    .service-image {
+        max-width: 40%;
+        margin-left: auto; /* Alinea la imagen a la derecha */
+    }
+}
+.custom-list li {
+    display: flex;
+    justify-content: space-between;
+}
+.custom-list li span.price {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #0044cc;
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-float a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float a:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+.messenger-float {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.messenger-float a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #0078FF;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.messenger-float a:hover {
+    background-color: #0054FF;
+    transform: scale(1.1);
+}
